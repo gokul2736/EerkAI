@@ -16,8 +16,8 @@ The primary challenge was overcoming the hard-coded restrictions in the Chromium
 |VOLATILENetwork|Unmetered Wi-Fi|Standard Wi-Fi|✅ PASSED
 
 ### 3. THE TECHNICAL BARRIERS
-- **Hardware Lock:** Chrome automatically aborts the model download if VRAM < 3GB.
-- **Geo-Block:** Download servers reject requests from non-US IP addresses (IP-based filtering).
+- **Hardware Lock:** Chrome automatically aborts the model download if VRAM < 3GB. So of course Saveetha  laps have virtual ram of 1.9 we must Override this specific part*
+- **Geo-Block:** Download servers reject requests from non-US IP addresses (IP-based filtering). 
 - **API Deprecation:** The standard window.ai documentation is obsolete in v133+ builds; the namespace has shifted to LanguageModel.
 
 ### 4. THE ENGINEERED SOLUTION (Methodology)
@@ -50,3 +50,42 @@ Interface: Standalone Single-File Web App (.html).
 Latency: 0ms Network / Instant Token Generation.
 
 Status: OPERATIONAL
+
+
+
+
+### Behaviourial Patterns
+
+```
+This is a very common observation when moving from "Cloud AI" (like ChatGPT) to "On-Device AI" (Gemini Nano).
+
+If you feel it is "not acting like AI," it is likely due to one of these three reasons. I have a fix for each.
+
+Diagnosis 1: It has "Amnesia" (No Memory)
+The Problem: The code I gave you creates a new brain (session) every time you click the button.
+
+You: "My name is Sam." -> AI: "Hello Sam."
+
+You: "What is my name?" -> AI: "I don't know." (Because it forgot the previous turn).
+
+The Fix: We need to move the session creation outside the button click function so it "remembers" the conversation.
+
+Diagnosis 2: It is "Too Strict"
+The Problem: I set the system prompt to "Output ONLY code." If you ask "How are you?", it might try to write Python code for "How are you" or just give a blank stare because it's forced to be a coding bot.
+
+The Fix: We will relax the instructions so it can chat and code.
+
+Diagnosis 3: The Output looks like "Notepad"
+The Problem: Real AI interfaces (like ChatGPT) highlight code in colors and format text. The current tool just dumps raw text.
+
+The Fix: I will add a simple "Markdown Beautifier" to the HTML so code looks like code.
+
+THE FIX: The "Smart Chat" Upgrade
+Here is the Version 2.0 code. Changes:
+
+Memory Enabled: It remembers what you said earlier.
+
+Chat History: It shows the previous messages (User vs AI) like WhatsApp/ChatGPT.
+
+Markdown Support: It detects code blocks (```) and colors them green.
+```

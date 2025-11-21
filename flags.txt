@@ -6,4 +6,5 @@ or simply
 
 --enable-features=PromptAPIForGeminiNano,OptimizationGuideOnDeviceModel:compatible_on_device_performance_classes/*,OptimizationGuideOnDeviceModelOverride
 
-this line after that exe" give single space and paste the above sentence....... ee sodhi antha naku oddu anukunte clear everything and copy full text beggining from the path
+this line after that exe" give single space and paste the above sentence.... ee sodhi antha naku oddu anukunte clear everything  in target container and copy full text beggining from the path
+after pasting click apply and ok* 

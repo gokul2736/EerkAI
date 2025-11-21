@@ -49,3 +49,41 @@ The HTML File: Upload your offline-architect.html so people have a UI to use imm
 
 The "India Fix": Mention the Language setting + VPN tip, as that is crucial for students here.
 ```
+
+
+
+
+# Chrome Nano Unlocker (Local AI Sidepanel)
+
+A research project to force-enable Google's Gemini Nano AI on low-end hardware (under 3GB VRAM) and restricted regions. This extension runs **completely offline**.
+
+## 🚀 Features
+- **Zero Latency:** Generates code/text instantly on your device.
+- **Privacy First:** No data leaves your laptop.
+- **Hardware Bypass:** runs on integrated graphics (tested on 1.9GB VRAM).
+
+## 🛠️ Installation Guide
+
+### 1. The Browser Setup (Crucial)
+You must launch Chrome Dev with specific flags to unlock the AI model.
+1. Right-click your Chrome Dev shortcut -> **Properties**.
+2. Add this to the **Target** field:
+   `--enable-features=PromptAPIForGeminiNano,OptimizationGuideOnDeviceModel:compatible_on_device_performance_classes/*,OptimizationGuideOnDeviceModelOverride`
+
+### 2. The "India Fix" (Region Lock)
+If you are outside the US:
+1. Set Chrome Language to **English (United States)**.
+2. Connect to a US VPN for the initial download.
+
+### 3. Loading the Extension
+1. Clone this repo.
+2. Go to `chrome://extensions`.
+3. Enable **Developer Mode**.
+4. Click **Load Unpacked** and select this folder.
+
+## 📝 Usage
+Click the extension icon to open the AI Sidepanel. Use the **NUKE_DATA** button to instantly wipe the session and clear memory.
+
+
+
+

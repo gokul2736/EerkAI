@@ -1,4 +1,4 @@
-# LOCAL AI
+# Eerk-AI
 ## Subject: Forced Implementation of On-Device LLM (Gemini Nano) on Sub-Optimal Hardware
 
 

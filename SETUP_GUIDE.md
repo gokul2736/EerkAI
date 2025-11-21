@@ -44,14 +44,16 @@
     * Go to `chrome://components`.
     * Find **Optimization Guide On Device Model**.
 <img width="466" height="86" alt="Screenshot 2025-11-21 110544" src="https://github.com/user-attachments/assets/598cde88-f88d-47f2-bb47-af5d5aded4a6" />  
-    * Click **Check for Update**. 
+    * Click **Check for Update**.   
     * *Wait for it to finish downloading (approx 1.5GB).*
+
 
 ## Wait for some 5-8 min in mean tym the LLM will be downloaded to Local directory (approx 1.5GB).*
 
- after waiting u"ll get this
- <img width="587" height="75" alt="Screenshot 2025-11-22 030134" src="https://github.com/user-attachments/assets/1b957221-6483-43d2-8cbd-4a0cd585e9d6" />
- If you get this kind of output then you've finished  sucessfully
+
+ after waiting u"ll get this  
+ <img width="587" height="75" alt="Screenshot 2025-11-22 030134" src="https://github.com/user-attachments/assets/1b957221-6483-43d2-8cbd-4a0cd585e9d6" />   
+ If you get this kind of output then you've finished  sucessfully  
 
 ### ✅ Checkpoint 2: Is it downloading?
 Look at the status under "Optimization Guide On Device Model".

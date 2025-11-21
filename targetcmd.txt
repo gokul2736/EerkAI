@@ -1,0 +1,1 @@
+"C:\Program Files\Google\Chrome Dev\Application\chrome.exe" --enable-features=PromptAPIForGeminiNano,OptimizationGuideOnDeviceModel:compatible_on_device_performance_classes/*,OptimizationGuideOnDeviceModelOverride
